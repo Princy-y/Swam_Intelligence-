@@ -1,0 +1,46 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3dx.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896257 0.5773502691896257 0.5773502691896257 2.0944
+  position -2.1338446410724356e-05 -2.133850674795571e-05 2.4535947722963085
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+Pioneer3dx {
+  hidden position_0_0 7.658247206043165e-07
+  hidden position_0_1 83.45521903717255
+  hidden position_0_2 83.45521903635844
+  hidden linearVelocity_0 -1.013783501036278e-06 4.29999990513079e-09 6.688217913986127e-07
+  hidden angularVelocity_0 1.281076113680399e-09 -1.3231973065291921e-05 -6.182525208411627e-10
+  hidden rotation_1 0.5773505639557068 -0.5773501218065419 -0.5773501218065157 2.094394557850948
+  hidden position_1_0 -10.295013997367422
+  hidden linearVelocity_1 2.918892550328595e-07 4.5864430013282075e-09 -1.0301488556381374e-06
+  hidden angularVelocity_1 1.2814246674334207e-09 -1.3231795949545663e-05 -4.786512794714905e-10
+  hidden rotation_2 0.9999999999999999 0 0 2.2713566169917514
+  hidden linearVelocity_2 5.640210045028167e-07 4.696769385197184e-09 -1.1230492189798531e-06
+  hidden angularVelocity_2 1.281274720752649e-09 1.5040430295628737e-05 -4.762056495024275e-10
+  hidden rotation_4 0.10081634815752835 -0.10081641263025887 0.9897838728169628 4.702120543964181
+  hidden linearVelocity_4 -2.6331285476011167e-07 4.22078526448082e-09 1.4724716120658028e-06
+  hidden angularVelocity_4 -1.1155633713646846e-07 2.9999552717903435 4.839920490715048e-07
+  hidden rotation_9 0.10081634775872617 -0.1008164122314566 0.9897838728982042 4.702120544046258
+  hidden linearVelocity_9 -2.630463355173145e-07 4.220785090513351e-09 1.4720573168547768e-06
+  hidden angularVelocity_9 -1.1155633775176496e-07 2.9999552717673788 4.839920519504545e-07
+  translation 0.3702208819747611 3.472616507240909e-08 0.09584061058389079
+  rotation 3.222750984404126e-06 -0.9999999999945844 6.669943156848397e-07 0.050375201491419414
+  controller "amr_controller"
+  extensionSlot [
+    GPS {
+    }
+  ]
+}
