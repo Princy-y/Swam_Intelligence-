@@ -1,25 +1,30 @@
 from controller import Robot
 
-# Initialize the robot instance
+# ============================================================
+# AMR-01 BASIC CONTROLLER
+# STEP 1: WAREHOUSE CONSTRUCTION
+# ============================================================
+
+# Initialize robot
 robot = Robot()
 
-# Get the simulation time step (typically 32 ms)
+# Get Webots simulation time step
 timestep = int(robot.getBasicTimeStep())
 
-# Connect to the Pioneer 3-DX motors
+# Get Pioneer 3-DX motors
 left_motor = robot.getDevice('left wheel')
 right_motor = robot.getDevice('right wheel')
 
-# Set motors to velocity control mode (infinity position)
+# Set motors to velocity control mode
 left_motor.setPosition(float('inf'))
 right_motor.setPosition(float('inf'))
 
-# Set a forward driving speed (rad/s)
-SPEED = 3.0
-left_motor.setVelocity(SPEED)
-right_motor.setVelocity(SPEED)
+# Keep robot stationary while building the warehouse
+left_motor.setVelocity(0.0)
+right_motor.setVelocity(0.0)
 
-print("[SUCCESS] Controller connected! Robot is driving forward...")
+print("[SUCCESS] AMR-01 controller connected.")
+print("[INFO] Robot is stationary - warehouse construction mode.")
 
 # Main simulation loop
 while robot.step(timestep) != -1:

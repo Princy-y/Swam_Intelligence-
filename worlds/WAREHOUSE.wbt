@@ -4,43 +4,454 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3dx.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/pallet/protos/WoodenPalletStack.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/CardboardBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/universal_robots/protos/UR3e.proto"
 
 WorldInfo {
+  gravity 9.86
 }
 Viewpoint {
-  orientation -0.5773502691896257 0.5773502691896257 0.5773502691896257 2.0944
-  position -2.1338446410724356e-05 -2.133850674795571e-05 2.4535947722963085
+  orientation -0.15918901585070933 0.0023766122258869525 0.9872452628130511 3.1119942445892343
+  position 37.8976888950817 2.0001907638911645 13.618998904111422
 }
 TexturedBackground {
+  texture "factory"
 }
 TexturedBackgroundLight {
+  texture "factory"
+  luminosity 2
 }
 RectangleArena {
+  translation 4.09 3.30336e-13 3.2e-11
+  rotation 1 0 0 4.6928e-06
+  floorSize 30 20
+  floorTileSize 60 40
+  floorAppearance PBRAppearance {
+    baseColor 0.32 0.34 0.35
+    roughness 0.85
+    metalness 0
+  }
+  wallThickness 0.3
+  wallHeight 3.3
+  wallAppearance PBRAppearance {
+    baseColor 0.18 0.19 0.2
+  }
+}
+CardboardBox {
+  translation -0.94 9.47 1.6
+  name "cardboard box(62)"
+  size 0.6 0.6 1
+}
+CardboardBox {
+  translation 7.55 9.44 1.6
+  name "cardboard box(61)"
+  size 0.6 0.6 1
+}
+CardboardBox {
+  translation -0.13 4.4 1.6
+  name "cardboard box(60)"
+  size 0.6 0.6 1
+}
+CardboardBox {
+  translation -3.74 3.34 1.6
+  name "cardboard box(59)"
+  size 0.6 0.6 1
+}
+CardboardBox {
+  translation 7.55 -9.67 1.6
+  name "cardboard box(58)"
+  size 0.6 0.6 1
+}
+CardboardBox {
+  translation 0.05 -0.47 1.6
+  name "cardboard box(57)"
+  size 0.6 0.6 1
+}
+CardboardBox {
+  translation 8.45 -0.16 1.6
+  name "cardboard box(56)"
+  size 0.6 0.6 1
+}
+CardboardBox {
+  translation -2.14 -5.41 1.6
+  name "cardboard box(55)"
+  size 0.6 0.6 1
+}
+CardboardBox {
+  translation 0.05 9.6 1.5
+  name "cardboard box(53)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation 8 4.17 1.5
+  name "cardboard box(52)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation 8.65 9.53 1.5
+  name "cardboard box(51)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation -0.81 4.04 1.5
+  name "cardboard box(50)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation -3.21 -0.7 1.5
+  name "cardboard box(49)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation 6.37 -0.07 1.5
+  name "cardboard box(48)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation 10.95 0.31 1.5
+  name "cardboard box(47)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation 8.65 -1.01 1.5
+  name "cardboard box(46)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation -3.4 -5.69 1.5
+  name "cardboard box(45)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation -7.35 -4.5 1.5
+  name "cardboard box(44)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation 10.73 -5.58 1.5
+  name "cardboard box(43)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation 10.6 9.51 1.3
+  name "cardboard box(38)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 5.04 9.46 1.3
+  name "cardboard box(39)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -3.67 9.53 1.3
+  name "cardboard box(40)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -6.05 9.57 1.3
+  name "cardboard box(41)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -5.74 3.49 1.3
+  name "cardboard box(37)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -0.56 3.45 1.3
+  name "cardboard box(36)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -5.39 4.46 1.3
+  name "cardboard box(35)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 8.62 3.4 1.3
+  name "cardboard box(30)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 10.8 4.54 1.3
+  name "cardboard box(31)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 5.13 3.63 1.3
+  name "cardboard box(32)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 4.36 4.59 1.3
+  name "cardboard box(33)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 9.89 -9.67 1.3
+  name "cardboard box(34)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -2.6 4.32 1.3
+  name "cardboard box(29)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -1.53 -0.96 1.3
+  name "cardboard box(28)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -0.49 0.26 1.3
+  name "cardboard box(27)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -4.84 0.2 1.3
+  rotation 1 0 0 4.692820414042842e-06
+  name "cardboard box(26)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -6.99 -5.36 1.3
+  name "cardboard box(25)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -0.39 -5.58 1.3
+  name "cardboard box(24)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -1.45 -4.46 1.3
+  name "cardboard box(23)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -5.53 -4.68 1.3
+  name "cardboard box(22)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 5.08 -0.9 1.3
+  name "cardboard box(21)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 4.66 0.32 1.3
+  name "cardboard box(20)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 7.23 -0.99 1.3
+  name "cardboard box(19)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 9.24 0.28 1.3
+  name "cardboard box(18)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 10.63 -0.95 1.3
+  name "cardboard box(17)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 3.92 -5.71 1.3
+  name "cardboard box(16)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 10.33 -4.65 1.3
+  name "cardboard box(15)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 5.49 -4.51 1.3
+  name "cardboard box(14)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation -3.29 -9.67 1.3
+  name "cardboard box(9)"
+  size 0.4 0.4 0.6
+}
+CardboardBox {
+  translation -2.08 -9.67 1.3
+  name "cardboard box(10)"
+  size 0.9 0.3 0.6
+}
+CardboardBox {
+  translation -1.12 -9.67 1.3
+  name "cardboard box(11)"
+}
+CardboardBox {
+  translation -6.07 -9.67 1.3
+  rotation 1 0 0 4.692820414042842e-06
+  name "cardboard box(12)"
+  size 1 0.6 0.6
+}
+CardboardBox {
+  translation 4.73 -9.67 1.3
+  name "cardboard box(7)"
+  size 0.8 0.4 0.6
+}
+CardboardBox {
+  translation 6.51 -9.67 1.3
+  rotation 1 0 0 4.692820414042842e-06
+  name "cardboard box(8)"
+  size 0.9 0.4 0.6
+}
+CardboardBox {
+  translation 3.75 -9.67 1.3
+  name "cardboard box(6)"
+}
+CardboardBox {
+  translation -4.63 -9.67 1.3
+  name "cardboard box(5)"
+}
+CardboardBox {
+  translation 7.1 3.5 1.6
+  name "cardboard box(4)"
+  size 0.6 0.6 1
+}
+CardboardBox {
+  translation 9.27 -4.51 1.6
+  name "cardboard box(54)"
+  size 0.6 0.6 1
+}
+CardboardBox {
+  translation 8.65 -9.67 1.5
+  name "cardboard box(3)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation 6.79 -4.57 1.5
+  name "cardboard box(42)"
+  size 0.7 0.4 0.6
+}
+CardboardBox {
+  translation -4.22 -0.98 1.3
+  name "cardboard box(2)"
+  size 0.7 0.7 0.6
+}
+CardboardBox {
+  translation 8.63 -5.45 1.3
+  name "cardboard box(13)"
+  size 0.7 0.7 0.6
+}
+WoodenPalletStack {
+  translation 7.44 4.04 0.1
+  name "wooden pallet stack(8)"
+  palletSize 8 2 0.14
+  palletLathNumber 8
+  palletLathWidth 0.2
+  palletMass 1
+  locked TRUE
+}
+WoodenPalletStack {
+  translation 7.57 -0.35 0.1
+  name "wooden pallet stack(7)"
+  palletSize 8 2 0.14
+  palletLathNumber 8
+  palletLathWidth 0.2
+  palletMass 1
+  locked TRUE
 }
 Pioneer3dx {
-  hidden position_0_0 7.658247206043165e-07
-  hidden position_0_1 83.45521903717255
-  hidden position_0_2 83.45521903635844
-  hidden linearVelocity_0 -1.013783501036278e-06 4.29999990513079e-09 6.688217913986127e-07
-  hidden angularVelocity_0 1.281076113680399e-09 -1.3231973065291921e-05 -6.182525208411627e-10
-  hidden rotation_1 0.5773505639557068 -0.5773501218065419 -0.5773501218065157 2.094394557850948
-  hidden position_1_0 -10.295013997367422
-  hidden linearVelocity_1 2.918892550328595e-07 4.5864430013282075e-09 -1.0301488556381374e-06
-  hidden angularVelocity_1 1.2814246674334207e-09 -1.3231795949545663e-05 -4.786512794714905e-10
-  hidden rotation_2 0.9999999999999999 0 0 2.2713566169917514
-  hidden linearVelocity_2 5.640210045028167e-07 4.696769385197184e-09 -1.1230492189798531e-06
-  hidden angularVelocity_2 1.281274720752649e-09 1.5040430295628737e-05 -4.762056495024275e-10
-  hidden rotation_4 0.10081634815752835 -0.10081641263025887 0.9897838728169628 4.702120543964181
-  hidden linearVelocity_4 -2.6331285476011167e-07 4.22078526448082e-09 1.4724716120658028e-06
-  hidden angularVelocity_4 -1.1155633713646846e-07 2.9999552717903435 4.839920490715048e-07
-  hidden rotation_9 0.10081634775872617 -0.1008164122314566 0.9897838728982042 4.702120544046258
-  hidden linearVelocity_9 -2.630463355173145e-07 4.220785090513351e-09 1.4720573168547768e-06
-  hidden angularVelocity_9 -1.1155633775176496e-07 2.9999552717673788 4.839920519504545e-07
-  translation 0.3702208819747611 3.472616507240909e-08 0.09584061058389079
-  rotation 3.222750984404126e-06 -0.9999999999945844 6.669943156848397e-07 0.050375201491419414
+  hidden position_0_0 8.446502317264173e-07
+  hidden position_0_1 189.4527418203179
+  hidden position_0_2 189.45274181927934
+  hidden rotation_1 0.5773505942956608 -0.5773501066365538 -0.5773501066365252 2.0943945123410304
+  hidden position_1_0 -10.292987869633459
+  hidden rotation_2 1 0 0 2.273382744725714
+  hidden rotation_4 0.2891180856439508 -0.2891180487862915 -0.9125905360125013 1.6621369534714114
+  hidden rotation_9 0.2891180860782278 -0.28911804922056833 -0.9125905357373347 1.6621369537716768
+  translation 15.9695 4.77924e-07 0.88366
+  rotation 2.087936635820525e-06 -0.9999999999977041 4.823403954475655e-07 0.050453657265779064
   controller "amr_controller"
   extensionSlot [
     GPS {
     }
   ]
+}
+WoodenPalletStack {
+  translation -3.98 -9.53 0.1
+  palletSize 8 0.8 0.14
+  palletLathNumber 8
+  palletLathWidth 0.1
+  lateralMisalignment 0
+}
+WoodenPalletStack {
+  translation -3.79 -5.1 0.1
+  name "wooden pallet stack(1)"
+  palletSize 8 2 0.14
+  palletLathNumber 8
+  palletMass 1
+  locked TRUE
+}
+WoodenPalletStack {
+  translation -3.46 -0.36 0.1
+  name "wooden pallet stack(2)"
+  palletSize 8 2 0.14
+  palletLathNumber 8
+  palletLathWidth 0.8
+  palletMass 1
+  locked TRUE
+}
+WoodenPalletStack {
+  translation -3.27 4.05 0.1
+  name "wooden pallet stack(3)"
+  palletSize 8 2 0.14
+  palletLathNumber 8
+  palletLathWidth 0.2
+  palletMass 1
+  locked TRUE
+}
+WoodenPalletStack {
+  translation -3.28 9.59 0.1
+  name "wooden pallet stack(4)"
+  palletSize 8 0.8 0.14
+  palletLathNumber 8
+  palletMass 1
+  locked TRUE
+}
+WoodenPalletStack {
+  translation 7.01 -9.55 0.1
+  name "wooden pallet stack(5)"
+  palletSize 8 0.8 0.14
+  palletLathNumber 8
+  palletMass 1
+  locked TRUE
+}
+WoodenPalletStack {
+  translation 7.36 -5.05 0.1
+  name "wooden pallet stack(6)"
+  palletSize 8 2 0.14
+  palletLathNumber 8
+  palletLathWidth 0.1
+  palletMass 1
+  locked TRUE
+}
+WoodenPalletStack {
+  translation 7.45 9.5 0.1
+  name "wooden pallet stack(9)"
+  palletSize 8 0.8 0.14
+  palletLathNumber 8
+  palletLathWidth 0.3
+  palletMass 1
+  locked TRUE
+}
+CardboardBox {
+  translation -7.16 -9.67 1.3
+}
+CardboardBox {
+  translation 3.75 -9.67 1.3
+  name "cardboard box(1)"
+}
+UR3e {
+  translation 16.05 0 1
 }
